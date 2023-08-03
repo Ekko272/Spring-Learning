@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!--配置文件：基于setter方法注入-->
+    <bean id="book" class="com.xuange.spring6.iocxml.di.Book">
+        <property name="bname" value="Handsome book"></property>
+        <property name="author" value="Xuanyu Liu"></property>
+        <!--<property name="others" <null/>></property>-->
+    </bean>
+
+    <!--配置文件：基于constructor方法注入-->
+    <bean id="bookCon" class="com.xuange.spring6.iocxml.di.Book">
+        <constructor-arg name="bname" value="Ugly book"></constructor-arg>
+        <constructor-arg name="author" value="Yawei Liu"></constructor-arg>
+    </bean>
+
+</beans>
