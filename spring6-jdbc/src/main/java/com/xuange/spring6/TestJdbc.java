@@ -48,7 +48,7 @@ public class TestJdbc {
 //查询多条数据为一个list集合
     public void testSelectList(){
         String sql = "select * from t_emp";
-        List<Emp> list = jdbcTemplate.query(sql, new BeanPropertyRowMapper<>(Emp.class));
+        ``
         System.out.println(list);
     }
 
